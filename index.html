@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <select name="convertFrom" id="">
+        <option selected disabled>Choose</option>
+        <option value="Decimal">Decimal</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+        <option value="Octal">Octal</option>
+        <option value="Binary">Binary</option>
+    </select>
+    <select name="convertTo" id="">
+        <option selected disabled>Choose</option>
+        <option value="Decimal">Decimal</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+        <option value="Octal">Octal</option>
+        <option value="Binary">Binary</option>
+    </select>
+    <hr />
+    <label for="">Enter number </label>
+    <input type="number" id="number">
+    <hr />
+
+    <button type="button" onclick={convert()}>Convert</button>
+    <button type="button">Swap</button>
+    <hr />
+    <p>output</p>
+    <textarea name="" id="result" cols="30" rows="10"></textarea>
+
+</body>
+
+</html>
